@@ -18,10 +18,10 @@ def copy_file(file, path):
     try:
         if not os.path.exists(path):
             print('创建存储目录', path)
-            os.mkdir(path)
+            os.makedirs(path)
         shutil.copy(file, path)
     except Exception:
-        print('1')
+        print('exception')
 
 
 def usb_walker():
